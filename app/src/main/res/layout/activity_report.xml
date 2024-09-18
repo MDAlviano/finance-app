@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/top_gradient_blue_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/backBtn"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:padding="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monthly Report"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+                        app:layout_constraintStart_toEndOf="@+id/backBtn"
+                        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="265dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/white_bg"
+                    android:elevation="3dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="16dp"
+                        app:cpb_background_progressbar_color="@color/lightGrey"
+                        app:cpb_background_progressbar_width="15dp"
+                        app:cpb_progressbar_color="@color/normal_blue"
+                        app:cpb_progressbar_width="15dp"
+                        app:cpb_progress="60"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progress_max="100"
+                        app:cpb_round_border="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
