@@ -1,5 +1,6 @@
 package com.alviano.app.finance.Repository
 
+import com.alviano.app.finance.Domain.BudgetDomain
 import com.alviano.app.finance.Domain.ExpenseDomain
 
 class MainRepository {
@@ -12,6 +13,12 @@ class MainRepository {
         ExpenseDomain("Restaurant", 341.12, "img1", "12 jun 2024 12:46"),
         ExpenseDomain("Restaurant", 341.12, "img1", "12 jun 2024 12:46"),
         ExpenseDomain("Restaurant", 341.12, "img1", "12 jun 2024 12:46"),
+    )
+
+    val budget = mutableListOf(
+        BudgetDomain("Home Loan", 1200.0, 80.8),
+        BudgetDomain("Subscription", 1200.0, 10.0),
+        BudgetDomain("Car Loan", 800.0, 30.0),
     )
 
 }

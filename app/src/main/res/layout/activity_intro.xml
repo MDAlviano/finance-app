@@ -5,32 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/normal_blue"
+    android:fitsSystemWindows="true"
     tools:context=".Activity.IntroActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/intro"
         android:scaleType="centerCrop"
+        android:src="@drawable/intro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/startBtn"
         android:layout_width="135dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="48dp"
-        android:text="Get Start"
-        android:textColor="@color/white"
         android:background="@drawable/stroke_bg"
         android:gravity="center"
+        android:text="Get Start"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,10 +42,10 @@
         android:text="The Best App to\n
 manage your \n
 money"
+        android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/startBtn"
-        app:layout_constraintStart_toStartOf="@id/startBtn"/>
+        app:layout_constraintStart_toStartOf="@id/startBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
